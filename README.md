@@ -43,8 +43,8 @@ Plot the performance plot
 Evaluate the model with the testing data.
 
 ## PROGRAM
-### Name: M GAYATHIRI ROSHINI
-### Register Number:212223110012
+### Name: JAWAHAR RAJ N
+### Register Number:212223240057
 ```python
 class NeuralNet(nn.Module):
   def __init__(self):
@@ -63,20 +63,20 @@ class NeuralNet(nn.Module):
 
 # Initialize the Model, Loss Function, and Optimizer
 
-ai_brain = NeuralNet()
+jawa = NeuralNet()
 criterion = nn.MSELoss()
-optimizer = optim.RMSprop(ai_brain.parameters(),lr=0.001)
+optimizer = optim.RMSprop(jawa.parameters(),lr=0.001)
 
 
-def train_model(ai_brain, X_train, y_train, criterion, optimizer, epochs=2000):
+def train_model(jawa, X_train, y_train, criterion, optimizer, epochs=2000):
     for epoch in range(epochs):
         optimizer.zero_grad()
-        loss = criterion(ai_brain(X_train), y_train)
+        loss = criterion(jawa(X_train), y_train)
         loss.backward()
         optimizer.step()
 
         # Append loss inside the loop
-        ai_brain.history['loss'].append(loss.item())
+       jawa.history['loss'].append(loss.item())
 
         if epoch % 200 == 0:
             print(f'Epoch [{epoch}/{epochs}], Loss: {loss.item():.6f}')
@@ -98,7 +98,7 @@ def train_model(ai_brain, X_train, y_train, criterion, optimizer, epochs=2000):
 
 
 ### New Sample Data Prediction
-![image](https://github.com/user-attachments/assets/ea925829-8559-4613-98ff-ba6d34eb8152)
+<img width="1024" height="161" alt="image" src="https://github.com/user-attachments/assets/4c04598c-c17d-41f5-b4c7-a5d6667a185c" />
 
 
 ## RESULT
